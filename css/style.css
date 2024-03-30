@@ -1,0 +1,520 @@
+/* ---------------- Google fonts ------------------ */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* ------------------ Custom fonts goes here --------------- */
+@font-face {
+  font-family: "Odin Rounded";
+  src: url("../fonts/Odin-Bold_0_wt.woff2") format("woff2"),
+    url("../fonts/Odin-Bold_0_wt.woff") format("woff"),
+    url("../fonts/Odin-Bold_0_wt.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---------------- Basic css ------------------ */
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  scroll-behavior: unset;
+  --white: #ffffff;
+  --dark: #000000;
+  --blue: #ad63ef;
+  --boxShadow: 0 0 2.5rem 0.1rem rgba(0, 0, 0, 0.15);
+}
+
+img {
+  width: 100%;
+}
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+strong,
+i,
+ol,
+ul,
+li,
+form,
+label,
+footer,
+header,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: 200ms;
+  -o-transition: 200ms;
+  transition: 200ms;
+  color: inherit;
+}
+
+button:focus,
+a:focus,
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/* body */
+body {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--dark);
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.figure img,
+.figure {
+  width: 100%;
+}
+
+p {
+  color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-family: "Odin Rounded";
+  color: var(--white);
+}
+
+/* Font Weights */
+.f_300 {
+  font-weight: 300 !important;
+}
+.f_400 {
+  font-weight: 400 !important;
+}
+.f_500 {
+  font-weight: 500 !important;
+}
+.f_600 {
+  font-weight: 600 !important;
+}
+.f_700 {
+  font-weight: 700 !important;
+}
+.f_800 {
+  font-weight: 800 !important;
+}
+.f_900 {
+  font-weight: 900 !important;
+}
+
+/* Font Family */
+.odin {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+.text_blue {
+  color: var(--blue) !important;
+}
+
+/* titles & texts */
+.title_80 {
+  font-size: 8rem;
+}
+.title_50 {
+  font-size: 5rem;
+}
+.title_30 {
+  font-size: 3rem;
+}
+.title_25 {
+  font-size: 2.5rem;
+}
+
+.text_18 {
+  font-size: 1.8rem;
+  line-height: 1.45;
+}
+.text_15 {
+  font-size: 1.5rem;
+  line-height: 1.45;
+}
+
+/* -------------- preloader --------------- */
+#preloader {
+  position: fixed;
+  background: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999;
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.loader3 {
+  width: 5rem;
+  height: 5rem;
+  display: inline-block;
+  padding: 0;
+  text-align: left;
+}
+
+.loader3 span {
+  position: absolute;
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  background: var(--blue);
+  -webkit-animation: loader3 1.5s linear infinite;
+  animation: loader3 1.5s linear infinite;
+}
+
+.loader3 span:last-child {
+  animation-delay: -0.9s;
+  -webkit-animation-delay: -0.9s;
+}
+
+@-webkit-keyframes loader3 {
+  0% {
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+    opacity: 0.8;
+  }
+
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+@keyframes loader3 {
+  0% {
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+    opacity: 0.8;
+  }
+
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+/* -------------- Back to top ------------ */
+.back-to-top {
+  width: 5.5rem;
+  height: 5.5rem;
+  line-height: 4.5rem;
+  text-align: center;
+  position: fixed;
+  bottom: 3rem;
+  right: 2rem;
+  border-radius: 50%;
+  background: var(--blue);
+  z-index: 1000;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.back-to-top img {
+  -webkit-filter: brightness(0) saturate(100%) invert(100%) sepia(100%)
+    saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+    hue-rotate(288deg) brightness(102%) contrast(102%);
+  width: 2rem;
+}
+
+.topbtn_hide {
+  opacity: 1;
+}
+
+/* -------------- Header Styles by Sahriar --------------- */
+.site_header {
+  padding: 2.8rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.site_header .container {
+  height: 100%;
+}
+.site_header .logo img:nth-child(2) {
+  display: none;
+}
+.site_header.sticky .logo img:nth-child(1) {
+  display: none;
+}
+.site_header.sticky .logo img:nth-child(2) {
+  display: block;
+}
+.sticky {
+  background: #fff;
+  -webkit-box-shadow: 0 0 1.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1.5rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+.menu_link {
+  font-size: 1.5rem;
+  color: #ffffff;
+  position: relative;
+}
+
+.primary_menu {
+  gap: 3rem;
+}
+
+.menu_link:before {
+  content: "";
+  width: 0;
+  height: 0.1rem;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  transition: all 0.3s ease;
+}
+
+.menu_link:hover:before,
+.menu_link.active:before {
+  width: 100%;
+}
+
+.menu_link:hover {
+  color: #fff;
+}
+
+.site_header.sticky .hamburger {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(98%) saturate(10%)
+    hue-rotate(269deg) brightness(104%) contrast(100%);
+}
+
+/* ========== Buttons ========== */
+
+.button_transparent {
+  height: 3.5rem;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 0 2.5rem;
+  display: flex;
+  align-items: center;
+  border: 0.1rem solid #fff;
+  white-space: nowrap;
+}
+
+.button_transparent:hover {
+  background: var(--blue);
+  color: #fff;
+  border: 0.1rem solid var(--blue);
+}
+
+.button_transparent.blue {
+  color: var(--blue);
+  border-color: var(--blue);
+}
+
+.button_transparent.blue:hover {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: #fff;
+}
+
+.button {
+  color: #ffffff !important;
+  height: 7rem;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  padding: 0 5rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+  background: #ffa500;
+  border: 0.1rem solid #ffa500;
+}
+
+.button:hover {
+  background: #fff;
+  border: 0.1rem solid #fff;
+  color: #ffa500 !important;
+}
+
+/* =================== hero_section ==================== */
+.hero_section {
+  background: url(../img/hero_bg.jpg) no-repeat scroll top left / cover;
+  padding-top: 20rem;
+  position: relative;
+  padding-bottom: 71.5rem;
+}
+
+.insight_box {
+  width: 85rem;
+  background: url(../img/insight_bg.png) no-repeat scroll top left / 100% 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10rem;
+}
+
+.insight_box::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(41, 38, 65, 0.8);
+}
+
+/* =================== Benifits_section ==================== */
+.benifit_section {
+  padding: 20rem 0 10rem 0;
+}
+
+/* =================== Explore Dream ==================== */
+.explore_section {
+  background: url(../img/explore_bg.jpg) no-repeat scroll top left / cover;
+  padding: 5rem 0;
+}
+.explore_content {
+  background: rgb(2, 50, 79, 0.6);
+  padding: 11.5rem 18.5rem 10rem 18.5rem;
+}
+
+/* =================== Personal Growth ==================== */
+.personal_growth {
+  background: url(../img/personal_growth_bg.jpg) no-repeat scroll top / cover;
+  padding: 10rem 0;
+}
+
+.personal_growth_slide img {
+  width: 100%;
+}
+.owl-item {
+  display: flex;
+  align-items: center;
+  width: 33rem;
+  transition: all 0.3s;
+}
+.personal_growth_slide {
+  width: 100%;
+}
+
+.owl-item.center {
+  width: 41rem !important;
+}
+
+.owl-nav.disabled {
+  display: none;
+}
+
+/* --------- Owl Setup Styles ---------- */
+.owl-stage {
+  width: 100%;
+  display: flex;
+  cursor: grab;
+  height: 41rem;
+}
+.owl-stage-outer {
+  width: 100%;
+}
+/* ================ Sience Behind The dream ================== */
+.science_behind_dream {
+  background: url(../img/sbd_bg.jpg) scroll no-repeat top left / cover;
+}
+.sbd_content .title_50 {
+  line-height: 1.6;
+}
+
+/* ================ Sponsors Section ================== */
+.sponsor_logos {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.sponsor_logos img {
+  width: 100%;
+  transition: 0.3s;
+}
+
+.sponsor_logos img:hover {
+  transform: scale(1.05);
+}
+
+/* =================== Footer Section ==================== */
+.footer_text {
+  color: #606060;
+}
+
+.social_icon {
+  gap: 2rem;
+}
+
+.footer_links a:hover {
+  color: #ffa500 !important;
+}
+
+.social_icon a:hover {
+  filter: invert(1);
+}

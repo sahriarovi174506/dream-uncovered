@@ -1,0 +1,436 @@
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1120px;
+  }
+}
+
+@media (min-width: 992px) {
+  .site_header.sticky .menu_link {
+    color: #000;
+  }
+  .site_header.sticky {
+    padding: 2rem 0;
+  }
+
+  .site_header.sticky .menu_btns a {
+    color: #000;
+    border-color: #000;
+  }
+  .site_header.sticky .menu_btns a:hover {
+    color: #fff;
+    border-color: var(--blue);
+  }
+}
+
+/* ------ Medium devices (tablets, 991px and down) -----*/
+@media (max-width: 991px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  br {
+    display: none;
+  }
+
+  .title_80 {
+    font-size: 6rem;
+    line-height: 1.2;
+  }
+
+  .title_50 {
+    font-size: 3.5rem;
+  }
+
+  /* ================== Mobile Menu ==================== */
+  .header_right {
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    height: 100vh;
+    top: -5rem;
+    background: #fff;
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s ease;
+    align-items: flex-start !important;
+  }
+
+  .header_right.active {
+    opacity: 1;
+    top: 0;
+    pointer-events: all;
+  }
+
+  .logo img {
+    width: 30rem;
+  }
+
+  .site_header.sticky {
+    padding: 2rem 0;
+  }
+
+  .mobile_menuwrap .primary_menu {
+    justify-content: center;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 5rem;
+  }
+
+  .mobile_menuwrap .menu_link {
+    color: #000;
+    font-size: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+    border-bottom: 0.1rem solid #efefef;
+  }
+
+  .menu_link:hover {
+    background: #efefef;
+    border-color: #fff;
+  }
+
+  .mobile_menuwrap .menu_btns {
+    justify-content: center;
+  }
+
+  .mobile_menuwrap .menu_btns a {
+    border-color: #000;
+    color: #000;
+    margin: 8rem 0 5rem 0;
+  }
+
+  .mobile_menuwrap .menu_btns a:hover {
+    background: #000;
+    color: #fff;
+  }
+
+  .mobile_menuwrap .menu_link:hover,
+  .mobile_menuwrap .menu_link.active {
+    color: var(--blue);
+  }
+
+  .hamburger {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile_menu_top a img {
+    width: 30rem;
+  }
+
+  .mobile_menu_top {
+    padding: 3rem;
+  }
+
+  .hamburger img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+      hue-rotate(93deg) brightness(103%) contrast(103%);
+    width: 3.5rem;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .close_menu img {
+    width: 3.5rem;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  .hamburger img:hover,
+  .close_menu img:hover {
+    transform: scale(1.1);
+  }
+  .mobile_menuwrap {
+    padding-right: 0;
+  }
+
+  /* ================== Hero section =================== */
+  .hero_section {
+    padding-top: 18rem;
+    padding-bottom: 52.5rem;
+  }
+
+  .header_content {
+    padding: 0;
+  }
+
+  .insight_box {
+    width: calc(100% - 8rem);
+    padding: 3rem 3rem 5rem 3rem;
+  }
+
+  .insight_box .pb_40 {
+    padding-bottom: 2rem;
+  }
+
+  .insight_box .section_btn {
+    margin-top: 2rem;
+  }
+
+  /* ================ Benifit Section ================= */
+  .benifit_section .row {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .benifit_section .col-lg-6 {
+    padding: 0 0.8rem;
+  }
+
+  .benifit_section .section_content .pb_90 {
+    padding-bottom: 4rem;
+  }
+
+  .benifit_section .section_content .pb_30 {
+    padding-bottom: 2rem;
+  }
+
+  .benifit_section .title_50.pb_40 {
+    padding-bottom: 2rem;
+  }
+
+  /* =============== explore_section ================ */
+  .explore_content {
+    padding: 4rem 3rem;
+  }
+  .explore_content * {
+    padding: 1rem 0;
+  }
+
+  /* =================== sponsor_logos ================== */
+  .sponsor_logos {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /* ================== Science Behind Dream =============== */
+  .sbd_content .title_50 {
+    line-height: 1.2;
+    margin-top: 1rem;
+  }
+
+  .sbd_content {
+    padding: 0 5rem;
+  }
+
+  .symbol_section .row {
+    gap: 3rem;
+  }
+
+  /* ================== symbol_section =============== */
+  .symbol_section .section_content .pb_40 {
+    padding-bottom: 2.5rem;
+  }
+
+  .symbol_section .section_content .pb_30 {
+    padding-bottom: 2rem;
+  }
+
+  .symbol_section .section_content .pb_90 {
+    padding-bottom: 0;
+  }
+
+  .symbol_section .col-lg-6 {
+    padding: 0 0.8rem;
+  }
+
+  /* =================== Personal growth Section =============== */
+  .owl-item.center {
+    width: 30rem !important;
+  }
+  .owl-stage {
+    height: 30rem;
+  }
+  .personal_header .title_30 {
+    font-size: 2.5rem;
+    padding-bottom: 0;
+  }
+  /* =================== Footer Section ================== */
+  .footer_content {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .footer_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*----- sm devices (tablets, 767px and down) -----*/
+@media (max-width: 767px) {
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-size: 1.6rem;
+  }
+  .title_80 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+  }
+  .title_30 {
+    font-size: 2.2rem;
+  }
+  .text_18 {
+    font-size: 1.5rem;
+  }
+  .text_15 {
+    font-size: 1.3rem;
+  }
+
+  /* =========== Personal Growth =========== */
+  .owl-item.center {
+    width: 22rem !important;
+  }
+  .owl-item {
+    margin-right: 1rem !important;
+  }
+  .owl-stage {
+    height: 22rem;
+  }
+  /* ============= Buttons ============= */
+  .button {
+    height: 5rem;
+    padding: 0 3rem;
+    font-size: 2rem;
+  }
+
+  /* ============ Mobile Menu ============= */
+  .mobile_menu_top a img,
+  .logo img {
+    width: 32rem;
+  }
+  .mobile_menuwrap .primary_menu {
+    margin-top: 2rem;
+  }
+  .mobile_menuwrap .menu_link {
+    font-size: 1.6rem;
+    height: 5.5rem;
+  }
+  .mobile_menu_top {
+    padding: 3rem 2rem;
+  }
+  .site_header {
+    padding: 2rem 0;
+  }
+
+  /* ============ Hero Section =============== */
+  .hero_section {
+    padding-top: 12rem;
+    padding-bottom: 46rem;
+  }
+
+  .insight_box {
+    width: calc(100% - 4rem);
+    padding: 3rem 3rem 5rem 3rem;
+  }
+
+  /* ================== science_behind_dream =============== */
+  .science_behind_dream {
+    padding: 6rem 0;
+  }
+  .science_behind_dream .section_btns {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .science_behind_dream .section_btns a {
+    margin: 0;
+  }
+  .sbd_content {
+    padding: 0;
+  }
+
+  /* ================ benifit Section =============== */
+  .benifit_section {
+    padding: 18rem 0 6rem 0;
+  }
+
+  /* ================ sponsor_section =============== */
+  .sponsor_section {
+    padding: 6rem 0;
+  }
+  .sponsor_section .title_50.pb_50 {
+    padding-bottom: 3rem;
+  }
+
+  /* =============== symbol_section =============== */
+  .symbol_section {
+    padding: 5rem 0 6rem 0;
+  }
+
+  .symbol_section .title_50 {
+    padding-bottom: 3rem;
+    line-height: 1;
+  }
+  .symbol_section .section_content .pb_40 {
+    padding-bottom: 2.5rem;
+  }
+
+  .symbol_section .section_content .pb_30 {
+    padding-bottom: 1rem;
+  }
+
+  /* ================ personal_growth =============== */
+  .personal_growth {
+    padding: 6rem 0;
+  }
+  .personal_header {
+    padding-bottom: 3rem;
+  }
+
+  /* ================ site_footer =============== */
+  .site_footer {
+    padding: 6rem 0;
+  }
+  .footer_logo img {
+    width: 24rem;
+  }
+  .social_icon {
+    gap: 2rem;
+    padding: 1rem 0;
+  }
+}
+
+/*----- xs devices (landscape phones, 575px and down) -----*/
+
+@media (max-width: 575px) {
+  html {
+    font-size: 2.32vw;
+  }
+
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  /* ============ Mobile Menu ============= */
+  .mobile_menu_top a img,
+  .logo img {
+    width: 22rem;
+  }
+  .hamburger img {
+    width: 3rem;
+  }
+  .close_menu img {
+    width: 3rem;
+  }
+  /* ============ Hero Section ============= */
+  .hero_section {
+    padding-top: 12rem;
+    padding-bottom: 63rem;
+  }
+
+  /* =========== Personal Growth =========== */
+  .owl-item.center {
+    width: 15rem !important;
+  }
+  .owl-stage {
+    height: 15rem;
+  }
+}
